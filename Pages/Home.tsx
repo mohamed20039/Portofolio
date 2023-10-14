@@ -1,8 +1,12 @@
+import Header from '@/Components/Header'
+import HomeHero from '@/Components/HomeHero'
 import React from 'react'
 
 const Home = () => {
   return (
-    <div>Home is Home whether you like it or not</div>
+    <div className='w-100% h-screen'>
+      <HomeHero />
+    </div>
   )
 }
 

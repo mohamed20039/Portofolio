@@ -1,11 +1,17 @@
 import Home from "@/Pages/Home";
 import Image from "next/image";
+import Header from "@/Components/Header";
+import About from "./about/page";
+import Projects from "./projects/page";
+
 
 export default function Page() {
   return (
-    <main className="">
-      <h1></h1>
+    <div className="">
+      <Header />
       <Home />
-    </main>
+      <About />
+      <Projects />
+    </div>
   );
 }
