@@ -6,6 +6,9 @@ import Translator from '/public/Translator.png';
 import LifePulse from '/public/LifePulse.png';
 import Zoophere from '/public/Zoophere.png';
 import { getProjectImage } from '@/Data';
+import { AiOutlineEye } from 'react-icons/ai';
+import { icons } from 'react-icons';
+import Link from 'next/link';
 interface Project {
     title: string;
     description: string;
@@ -14,15 +17,24 @@ interface Project {
   
 const Projects = () => {
   return (
-    <div className='w-full h-screen flex justify-center items-center min-h-screen'>
+    <div className='w-full h-screen grid grid-cols-1 md:grid-cols-3 place-items-center text-sm gap-5'>
             {projects.map((project, index) => (
-              <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5'>
+              <div className='bg-white grid text-black w-[300px] p-4 rounded-md'>
                 <div key={index} className=''>
-                <Image src={getProjectImage(project.image)} alt={project.title} width={200} height={200}/>
-                <p>{project.title}</p>
-                <p className="legend">{project.description}</p>
-                <p>Stacks/Tools:{project.stacks}</p>
-              </div>
+                  <div className="project-content">
+                    <div className="image-container">
+                      <Image src={getProjectImage(project.image)} alt={project.title} width={300} height={300} className='mx-auto mt-3'/>
+                    </div>
+                    <div className="text-container">
+                      <div className='flex justify-between items-center'>
+                        <p className='mt-2 font-bold'>{project.title}</p>
+                        <Link href="" target='_blank'><AiOutlineEye /></Link>
+                      </div>
+                      <p className="mt-4">{project.description}</p>
+                      <p className="mt-4 text-xs font-semibold"><span className='text-sky-700'>Stacks/Tools: </span>{project.stacks}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
     </div>
