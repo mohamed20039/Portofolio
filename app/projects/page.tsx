@@ -28,7 +28,7 @@ const Projects = () => {
                     <div className="text-container">
                       <div className='flex justify-between items-center'>
                         <p className='mt-2 font-bold'>{project.title}</p>
-                        <Link href="" target='_blank'><AiOutlineEye /></Link>
+                        <Link href={project.links} target='_blank'><AiOutlineEye /></Link>
                       </div>
                       <p className="mt-4">{project.description}</p>
                       <p className="mt-4 text-xs font-semibold"><span className='text-sky-700'>Stacks/Tools: </span>{project.stacks}</p>
