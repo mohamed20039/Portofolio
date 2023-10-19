@@ -92,13 +92,6 @@ export const links = [
       links: 'https://Zoophere.vercel.app',
       stacks: 'HTML,CSS,JS,Mymemory API,Git,Vercel'
     },
-    {
-      title: 'Translator',
-      description: 'The Translator website is a user-friendly platform built with HTML, CSS, JavaScript, and the MyMemory API. It allows users to easily translate text between different languages.',
-      image: 'Translator',
-      links: 'https://Zoophere.vercel.app',
-      stacks: 'HTML,CSS,JS,Mymemory API,Git,Vercel'
-    },
   ] as const;
   export const skills = [
     {
