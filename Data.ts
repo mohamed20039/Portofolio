@@ -3,6 +3,17 @@ import Translator from '/public/Translator.png';
 import LifePulse from '/public/LifePulse.png';
 import Zoophere from '/public/Zoophere.png';
 import { StaticImageData } from 'next/image';
+import HTML from '@/public/Skills Images/Html.png'
+import CSS from '@/public/Skills Images/CSS.png'
+import Javascript from '@/public/Skills Images/Javascript.png'
+import Tailwind from '@/public/Skills Images/Tailwind.png'
+import Sass from '@/public/Skills Images/Sass.png'
+import Firebase from '@/public/Skills Images/Firebase.png'
+import Git from '@/public/Skills Images/Git.png'
+import PostMan from '@/public/Skills Images/Postman.png'
+import Figma from '@/public/Skills Images/Figma.png'
+import Vercel from '@/public/Skills Images/Vercel.png'
+import React from '@/public/Skills Images/React.png'
 
 type ImageName = 'ReactCommerce' | 'Translator' | 'LifePulse' | 'Zoophere';
 
@@ -11,6 +22,22 @@ const images: Record<ImageName, StaticImageData> = {
   Translator,
   LifePulse,
   Zoophere,
+};
+
+type SkillName = "HTML" | "CSS" | "Javascript" | "React" | "Tailwind" | "Sass" | "Firebase" | "Git" | "Vercel" | "PostMan" | "Figma";
+
+const skillImages: Record<SkillName, StaticImageData> = {
+  HTML,
+  CSS,
+  Javascript,
+  Tailwind,
+  Sass,
+  Firebase,
+  Git,
+  PostMan,
+  Figma,
+  Vercel,
+  React,
 };
 
 
@@ -73,4 +100,40 @@ export const links = [
       stacks: 'HTML,CSS,JS,Mymemory API,Git,Vercel'
     },
   ] as const;
+  export const skills = [
+    {
+      image: 'HTML',
+    },
+    {
+      image: 'CSS',
+    },
+    {
+      image: 'Javascript',
+    },
+    {
+      image: 'React',
+    },
+    {
+      image: 'Tailwind',
+    },
+    {
+      image: 'Sass',
+    },
+    {
+      image: 'Firebase',
+    },
+    {
+      image: 'Git',
+    },
+    {
+      image: 'Vercel',
+    },
+    {
+      image: 'PostMan',
+    },
+    {
+      image: 'Figma',
+    }
+  ] as const;
 export const getProjectImage = (imageName: ImageName) => images[imageName];
+export const getSkillImage = (skillName: SkillName) => skillImages[skillName];
