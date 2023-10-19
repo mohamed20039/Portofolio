@@ -17,7 +17,7 @@ import { getSkillImage } from '@/Data';
 const Skills = () => {
   return (
     <div className='w-full h-auto flex justify-center items-center min-h-screen'>
-      <div className='flex flex-col text-center sm:px-0'>
+      <div className='flex flex-col text-center px-4 sm:px-0'>
         <h1 className='text-2xl sm:text-4xl font-semibold mb-10 sm:mb-52'>My <span className='text-sky-500'>Skills</span></h1>
         <div className='flex flex-wrap justify-center items-center gap-4'>
           {
