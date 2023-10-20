@@ -9,7 +9,7 @@ const Header = () => {
         <ul className="flex gap-4 justify-center items-center">
           {links.map((link, index) => (
             <li key={index}>
-              <Link href={link.hash}>
+              <Link href={link.hash} target='_blank'>
                 {link.name}
               </Link>
             </li>
